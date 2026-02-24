@@ -33,7 +33,10 @@ import java.util.Scanner;
 
 public class Question3_ReidAmrhein {
     public static int max(int[] array, int n){
-
+        // Base case
+        if (n == 1) {
+            return A[0];
+        }
     }
 
     public static void main(String[] args) {
