@@ -29,6 +29,8 @@
 * Said not to include Student ID, so I didn't include it
 ********************************************************************/
 
+import java.util.Scanner;
+
 public class Question6_ReidAmrhein {
     public static int sumEven(int[] A, int n) {
 
