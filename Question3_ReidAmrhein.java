@@ -32,16 +32,24 @@
 import java.util.Scanner;
 
 public class Question3_ReidAmrhein {
+    public static String reverse(String[] s, int n) {
+        // Base case
+        if (n < 0) {
+            return "";
+        }
 
+        // Recursive case
+        return s[n] + reverse(s, n - 1);
+    }
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter a string: ");
         String s = input.nextLine();
 
-        String result = reverse(s, 0);
+        String result = reverse(n, n-1);
 
-        System.out.println("Reversed: " + result);
+        System.out.println("The string in reverse: " + result);
         input.close();
     }
 }
