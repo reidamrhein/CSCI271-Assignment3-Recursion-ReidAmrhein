@@ -34,11 +34,16 @@ import java.util.Scanner;
 public class Question3_ReidAmrhein {
     public static int max(int[] array, int n){
         // Base case
+        // the base case is 1 and not 0 because there is no max of 0 elements
         if (n == 1) {
             return A[0];
         }
+        // Recursive Case
+        // this is basically saying that the max of n elements is larger than
+        // the max of the previous numbers
+        return Math.max(A[n - 1], max(A, n - 1));
     }
 
     public static void main(String[] args) {
         
-    }}
+    }
