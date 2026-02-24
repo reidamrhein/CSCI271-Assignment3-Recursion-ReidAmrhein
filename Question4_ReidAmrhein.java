@@ -32,3 +32,21 @@
 import java.util.Scanner;
 
 public class Question4_ReidAmrhein {
+    
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a very big number: ");
+        long N = input.nextLong();
+
+        System.out.print("Enter a digit (0-9): ");
+        int D = input.nextInt();
+
+        int result = countDigit(N, D);
+
+        System.out.println("D occurs inside of N" + result + "times.");
+        // closes scanner
+        input.close();
+    }
+}
