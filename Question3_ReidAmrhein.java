@@ -32,3 +32,16 @@
 import java.util.Scanner;
 
 public class Question3_ReidAmrhein {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String s = input.nextLine();
+
+        String result = reverse(s, 0);
+
+        System.out.println("Reversed: " + result);
+        input.close();
+    }
+}
