@@ -33,14 +33,11 @@ import java.util.Scanner;
 
 public class Question1_ReidAmrhein {
 
-    public static int recursiveLength(String s) {
-        // Base case
-        if (s.equals("")) {
-            return 0;
-        }
+    public static int recursiveLength(String s, int n) {
+    if (n == 0)
+        return 0;
 
-        // Recursive case
-        return 1 + recursiveLength(s.substring(1));
+    return 1 + recursiveLength(s, n - 1);
     }
 
     public static void main(String[] args) {
@@ -49,7 +46,7 @@ public class Question1_ReidAmrhein {
         System.out.print("Enter a string: ");
         String s = stringScanner.nextLine();
 
-        int length = recursiveLength(s);
+        int length = recursiveLength(s, n);
         System.out.println("Length of the string: " + length);
 
         stringScanner.close();
