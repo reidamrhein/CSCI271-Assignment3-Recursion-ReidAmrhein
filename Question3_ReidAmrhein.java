@@ -45,5 +45,21 @@ public class Question3_ReidAmrhein {
     }
 
     public static void main(String[] args) {
-        
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter number of integers: ");
+        int n = input.nextInt();
+
+        int[] A = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            A[i] = input.nextInt();
+        }
+
+        int result = max(A, n);
+
+        System.out.println("Maximum: " + result);
+        // closes scanner
+        input.close();
     }
+}
