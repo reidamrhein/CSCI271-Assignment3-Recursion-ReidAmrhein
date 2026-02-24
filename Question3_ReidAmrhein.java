@@ -36,12 +36,12 @@ public class Question3_ReidAmrhein {
         // Base case
         // the base case is 1 and not 0 because there is no max of 0 elements
         if (n == 1) {
-            return A[0];
+            return array[0];
         }
         // Recursive Case
         // this is basically saying that the max of n elements is larger than
         // the max of the previous numbers
-        return Math.max(A[n - 1], max(A, n - 1));
+        return Math.max(array[n - 1], max(array, n - 1));
     }
 
     public static void main(String[] args) {
@@ -50,13 +50,13 @@ public class Question3_ReidAmrhein {
         System.out.print("Enter number of integers: ");
         int n = input.nextInt();
 
-        int[] A = new int[n];
+        int[] array = new int[n];
 
         for (int i = 0; i < n; i++) {
-            A[i] = input.nextInt();
+            array[i] = input.nextInt();
         }
 
-        int result = max(A, n);
+        int result = max(array, n);
 
         System.out.println("Maximum: " + result);
         // closes scanner
