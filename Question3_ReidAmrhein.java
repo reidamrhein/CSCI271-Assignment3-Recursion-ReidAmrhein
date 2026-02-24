@@ -32,3 +32,10 @@
 import java.util.Scanner;
 
 public class Question3_ReidAmrhein {
+    public static int max(int[] array, int n){
+
+    }
+
+    public static void main(String[] args) {
+        
+    }}
