@@ -41,14 +41,15 @@ public class Question1_ReidAmrhein {
     }
 
     public static void main(String[] args) {
-        Scanner stringScanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.print("Enter a string: ");
-        String s = stringScanner.nextLine();
+        String s = input.nextLine();
 
         int length = recursiveLength(s, n);
         System.out.println("Length of the string: " + length);
 
-        stringScanner.close();
+        // closes scanner
+        input.close();
     }
 }

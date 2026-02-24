@@ -50,6 +50,7 @@ public class Question3_ReidAmrhein {
         String result = reverse(n, n-1);
 
         System.out.println("The string in reverse: " + result);
+        // closes scanner
         input.close();
     }
 }
