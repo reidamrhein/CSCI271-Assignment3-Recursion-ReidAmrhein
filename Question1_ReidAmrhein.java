@@ -32,3 +32,26 @@
 import java.util.Scanner;
 
 public class Question1_ReidAmrhein {
+
+    public static int recursiveLength(String input) {
+        // Base case
+        if (input.equals("")) {
+            return 0;
+        }
+
+        // Recursive case
+        return 1 + recursiveLength(input.substring(1));
+    }
+
+    public static void main(String[] args) {
+        Scanner stringScanner = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String input = stringScanner.nextLine();
+
+        int length = recursiveLength(input);
+        System.out.println("Length of the string: " + length);
+
+        stringScanner.close();
+    }
+}
