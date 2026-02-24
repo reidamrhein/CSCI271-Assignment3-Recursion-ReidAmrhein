@@ -33,23 +33,23 @@ import java.util.Scanner;
 
 public class Question1_ReidAmrhein {
 
-    public static int recursiveLength(String input) {
+    public static int recursiveLength(String s) {
         // Base case
-        if (input.equals("")) {
+        if (s.equals("")) {
             return 0;
         }
 
         // Recursive case
-        return 1 + recursiveLength(input.substring(1));
+        return 1 + recursiveLength(s.substring(1));
     }
 
     public static void main(String[] args) {
         Scanner stringScanner = new Scanner(System.in);
 
         System.out.print("Enter a string: ");
-        String input = stringScanner.nextLine();
+        String s = stringScanner.nextLine();
 
-        int length = recursiveLength(input);
+        int length = recursiveLength(s);
         System.out.println("Length of the string: " + length);
 
         stringScanner.close();
