@@ -32,3 +32,17 @@
 import java.util.Scanner;
 
 public class Question6_ReidAmrhein {
+    public static int sumEven(int[] A, int n) {
+
+        // Base case
+        if (n == 0) {
+            return 0;
+        }
+
+        // Recursive case
+        if (A[n - 1] % 2 == 0) {
+            return A[n - 1] + sumEven(A, n - 1);
+        } else {
+            return sumEven(A, n - 1);
+        }
+    }
