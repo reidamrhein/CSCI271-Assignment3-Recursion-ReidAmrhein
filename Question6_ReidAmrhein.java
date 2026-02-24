@@ -29,8 +29,6 @@
 * Said not to include Student ID, so I didn't include it
 ********************************************************************/
 
-import java.util.Scanner;
-
 public class Question6_ReidAmrhein {
     public static int sumEven(int[] A, int n) {
 
@@ -42,7 +40,28 @@ public class Question6_ReidAmrhein {
         // Recursive case
         if (A[n - 1] % 2 == 0) {
             return A[n - 1] + sumEven(A, n - 1);
-        } else {
+        } 
+        else {
             return sumEven(A, n - 1);
         }
     }
+
+    public static void main(String[] args) {
+       Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter number of integers: ");
+        int n = input.nextInt();
+
+        int[] A = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            A[i] = input.nextInt();
+        }
+
+        int result = sumEven(A, n);
+
+        System.out.println("Sum of even numbers: " + result);
+        // closes scanner
+        input.close();
+    }
+}
