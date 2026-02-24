@@ -32,7 +32,20 @@
 import java.util.Scanner;
 
 public class Question4_ReidAmrhein {
-    
+    public static int countDigit(long N, int D) {
+        // Base case
+        if (N == 0) {
+            return 0;
+        }
+
+        // Recursive case
+        if (N % 10 == D) {
+            return 1 + countDigit(N / 10, D);
+        } 
+        else {
+            return countDigit(N / 10, D);
+        }
+    }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
