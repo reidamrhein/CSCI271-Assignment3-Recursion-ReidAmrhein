@@ -47,7 +47,7 @@ public class Question5_ReidAmrhein {
         System.out.print("Enter a string: ");
         String s = input.nextLine();
 
-        String result = reverse(n, n-1);
+        String result = reverse(s, s.length() - 1);
 
         System.out.println("The string in reverse: " + result);
         // closes scanner
