@@ -58,7 +58,7 @@ public class Question4_ReidAmrhein {
 
         int result = countDigit(N, D);
 
-        System.out.println("D occurs inside of N" + result + "times.");
+        System.out.println("D occurs inside of N " + result + "times.");
         // closes scanner
         input.close();
     }
