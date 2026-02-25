@@ -32,6 +32,23 @@
 import java.util.Scanner;
 
 public class Question3_ReidAmrhein {
+    
+    /*****************************max****************************
+* Description: Uses recursion to output the highest int in a given string.
+*
+* Parameters:
+* s (input) - the string being evaluated
+* n (input) - number of characters remaining to check
+*
+* Pre: if s is not null, n >= 0
+* Post: Returns the total number of vowels in the string.
+*
+* Returns: the highest integer in said string
+*
+* Called by: main
+* Calls: max
+********************************************************************/
+    
     public static int max(int[] array, int n){
         // Base case
         // the base case is 1 and not 0 because there is no max of 0 elements
