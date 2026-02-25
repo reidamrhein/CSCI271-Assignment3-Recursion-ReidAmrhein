@@ -37,6 +37,13 @@ public class Question2_ReidAmrhein {
         if (n == 0) {
             return 0;
         }
+        // recursive case
+        if (s.charAt(n-1) == c) {
+            return 1;
+        }
+        else {
+            return countCharacter(s, c, n - 1);
+        }
     }
 
     public static void main(String[] args) {
