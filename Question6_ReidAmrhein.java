@@ -32,6 +32,23 @@
 import java.util.Scanner;
 
 public class Question6_ReidAmrhein {
+    
+    /*****************************sumEven****************************
+* Description: Stores list of numbers into an array, and then returns the
+* sum of all even numbers
+*
+* Parameters:
+* n (input) - the string being evaluated
+* A [Array] - where the integers are stored
+*
+* Pre: if A is not empty 
+*
+* Returns: Sum of all even numbers
+*
+* Called by: main
+* Calls: sumEven
+********************************************************************/
+    
     public static int sumEven(int[] A, int n) {
 
         // Base case
