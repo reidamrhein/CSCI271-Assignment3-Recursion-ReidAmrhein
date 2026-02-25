@@ -33,6 +33,22 @@ import java.util.Scanner;
 
 public class Question1_ReidAmrhein {
 
+     /*****************************recursiveLength****************************
+    * Description: Recursively computes the length of a string.
+    *
+    * Parameters:
+    * s (input)  - the string whose length is being computed
+    * n (input)  - number of characters remaining to evaluate
+    *
+    * Pre: If s is not null, n >= 0
+    * Post: Returns the number of characters in s
+    *
+    * Returns: integer length of the string
+    *
+    * Called by: main
+    * Calls: recursiveLength
+    ************************************************************************/
+    
     public static int recursiveLength(String s, int n) {
         // base case
         if (n == 0) {
@@ -45,12 +61,12 @@ public class Question1_ReidAmrhein {
     }
     
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in); // opens scanner for user input
 
         System.out.print("Enter a string: ");
-        String s = input.nextLine();
+        String s = input.nextLine(); // user input string
 
-        int length = recursiveLength(s, n);
+        int length = recursiveLength(s, s.length());
         System.out.println("Length of the string: " + length);
 
         // closes scanner
