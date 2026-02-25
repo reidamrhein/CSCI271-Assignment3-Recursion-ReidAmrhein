@@ -49,6 +49,16 @@ public class Question2_ReidAmrhein {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        System.out.print("Enter a string: ");
+        String s = input.nextLine();
+
+        System.out.print("Enter a character: ");
+        char c = input.next().charAt(0);
+
+        int result = countCharacter(s, c, s.length());
+
+        System.out.println("C occurs in S " + result + "times.");
+
         // closes scanner
         input.close();
     }
