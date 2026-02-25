@@ -34,12 +34,16 @@ import java.util.Scanner;
 public class Question1_ReidAmrhein {
 
     public static int recursiveLength(String s, int n) {
-    if (n == 0)
-        return 0;
-
-    return 1 + recursiveLength(s, n - 1);
+        // base case
+        if (n == 0) {
+            return 0;
+        }
+        // recursive case
+        else {
+            return 1 + recursiveLength(s, n - 1);
+        }
     }
-
+    
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
