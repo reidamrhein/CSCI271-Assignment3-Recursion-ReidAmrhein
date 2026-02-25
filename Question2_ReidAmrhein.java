@@ -75,7 +75,7 @@ public class Question2_ReidAmrhein {
 
         int result = countCharacter(s, c, s.length());
 
-        System.out.println("C occurs in S " + result + "times.");
+        System.out.println("C occurs in S " + result + " times.");
 
         // closes scanner
         input.close();

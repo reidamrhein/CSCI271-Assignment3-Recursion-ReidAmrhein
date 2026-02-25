@@ -41,9 +41,9 @@ public class Question3_ReidAmrhein {
 * n (input) - number of characters remaining to check
 *
 * Pre: if s is not null, n >= 0
-* Post: Returns the total number of vowels in the string.
+* Post: Returns the largest integer in the array.
 *
-* Returns: the highest integer in said string
+* Returns: the largest integer in the array
 *
 * Called by: main
 * Calls: max

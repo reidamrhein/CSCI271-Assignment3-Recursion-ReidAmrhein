@@ -34,8 +34,8 @@ import java.util.Scanner;
 public class Question4_ReidAmrhein {
     
     /*****************************countDigits****************************
-* Description: Recursively counts the number of digit
-* characters in a given string.
+* Description: Recursively counts how many times digit D appears 
+* in number N.
 *
 * Parameters:
 * s (input) - the string being evaluated
@@ -76,7 +76,7 @@ public class Question4_ReidAmrhein {
 
         int result = countDigit(N, D);
 
-        System.out.println("D occurs inside of N " + result + "times.");
+        System.out.println("D occurs inside of N " + result + " times.");
         // closes scanner
         input.close();
     }

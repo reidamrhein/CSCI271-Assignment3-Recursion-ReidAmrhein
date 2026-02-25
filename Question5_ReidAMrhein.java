@@ -47,7 +47,7 @@ public class Question5_ReidAmrhein {
     *
     * Called by: main
     * Calls: reverse
-    ************************************************************************/
+    /************************************************************************/
     
     public static String reverse(String s, int n) {
         // Base case

@@ -38,8 +38,8 @@ public class Question6_ReidAmrhein {
 * sum of all even numbers
 *
 * Parameters:
-* n (input) - the string being evaluated
-* A [Array] - where the integers are stored
+* A (input) - array of integers
+* n (input) - number of elements being evaluated
 *
 * Pre: if A is not empty 
 *
