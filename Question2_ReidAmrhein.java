@@ -39,7 +39,7 @@ public class Question2_ReidAmrhein {
         }
         // recursive case
         if (s.charAt(n-1) == c) {
-            return 1;
+            return 1 + countCharacter(s, c, n - 1);
         }
         else {
             return countCharacter(s, c, n - 1);
