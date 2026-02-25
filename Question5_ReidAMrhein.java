@@ -32,6 +32,23 @@
 import java.util.Scanner;
 
 public class Question5_ReidAmrhein {
+    
+    /*****************************reverse****************************
+    * Description: Recursively reverses a string.
+    *
+    * Parameters:
+    * s (input) - string to reverse
+    * n (input) - index position
+    *
+    * Pre: if s not null
+    * Post: Returns reversed string
+    *
+    * Returns: reversed string
+    *
+    * Called by: main
+    * Calls: reverse
+    ************************************************************************/
+    
     public static String reverse(String s, int n) {
         // Base case
         if (n < 0) {
