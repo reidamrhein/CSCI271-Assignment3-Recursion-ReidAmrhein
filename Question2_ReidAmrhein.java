@@ -33,7 +33,10 @@ import java.util.Scanner;
 
 public class Question2_ReidAmrhein {
     public static int countCharacter(String s, char c, int n) {
-
+        // Base case
+        if (n == 0) {
+            return 0;
+        }
     }
 
     public static void main(String[] args) {
