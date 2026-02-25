@@ -32,6 +32,24 @@
 import java.util.Scanner;
 
 public class Question4_ReidAmrhein {
+    
+    /*****************************countDigits****************************
+* Description: Recursively counts the number of digit
+* characters in a given string.
+*
+* Parameters:
+* s (input) - the string being evaluated
+* n (input) - number of characters remaining to check
+*
+* Pre: if s is not null, n >= 0
+* Post: Returns the total number of digit characters in the string.
+*
+* Returns: integer representing digit count
+*
+* Called by: main
+* Calls: countDigits
+********************************************************************/
+    
     public static int countDigit(long N, int D) {
         // Base case
         if (N == 0) {
