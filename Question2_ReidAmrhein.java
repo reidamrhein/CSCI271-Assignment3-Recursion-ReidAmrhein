@@ -32,4 +32,14 @@
 import java.util.Scanner;
 
 public class Question2_ReidAmrhein {
-    
+    public static int countCharacter(String s, char c, int n) {
+
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // closes scanner
+        input.close();
+    }
+}
