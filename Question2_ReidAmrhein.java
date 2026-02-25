@@ -32,6 +32,24 @@
 import java.util.Scanner;
 
 public class Question2_ReidAmrhein {
+    
+    /*****************************countCharacter****************************
+    * Description: Recursively counts occurrences of character c in string s.
+    *
+    * Parameters:
+    * s (input) - string being searched
+    * c (input) - character being counted
+    * n (input) - number of characters remaining
+    *
+    * Pre: if s not null, n >= 0
+    * Post: Returns total occurrences of c in s.
+    *
+    * Returns: integer count
+    *
+    * Called by: main
+    * Calls: countCharacter
+    ************************************************************************/
+    
     public static int countCharacter(String s, char c, int n) {
         // Base case
         if (n == 0) {
