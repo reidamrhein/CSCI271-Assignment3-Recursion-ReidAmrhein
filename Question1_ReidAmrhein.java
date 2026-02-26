@@ -47,7 +47,19 @@ public class Question1_ReidAmrhein {
     *
     * Called by: main
     * Calls: recursiveLength
+    * 
+    *  Running Time Analysis:
+    * Let n be the length of the string.
+    * Each recursive call reduces n by 1 and performs constant work.
+    *
+    * Recurrence relation:
+    * T(n) = T(n - 1) + c
+    * 
+    * * Space Complexity:
+    * O(n) due to recursive call stack.
     ************************************************************************/
+
+  
     
     public static int recursiveLength(String s, int n) {
         // base case
