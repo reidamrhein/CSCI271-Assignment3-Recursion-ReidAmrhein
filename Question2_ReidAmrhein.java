@@ -48,6 +48,16 @@ public class Question2_ReidAmrhein {
     *
     * Called by: main
     * Calls: countCharacter
+    * 
+    * Running Time Analysis:
+    * Let n be the length of the string.
+    * Each call checks one character and reduces n by 1.
+    *
+    * Recurrence:
+    * T(n) = T(n - 1) + c
+    * 
+    * Space Complexity:
+    * O(n) due to recursion depth.
     ************************************************************************/
     
     public static int countCharacter(String s, char c, int n) {

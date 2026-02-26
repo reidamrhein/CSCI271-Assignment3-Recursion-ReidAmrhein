@@ -47,6 +47,16 @@ public class Question6_ReidAmrhein {
 *
 * Called by: main
 * Calls: sumEven
+
+* Running Time Analysis:
+* Let n be the number of elements in the array.
+* Each recursive call processes one element.
+*
+* Recurrence:
+* T(n) = T(n - 1) + c
+
+* Space Complexity:
+* O(n) due to recursion stack.
 ********************************************************************/
     
     public static int sumEven(int[] A, int n) {

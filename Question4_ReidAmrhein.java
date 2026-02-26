@@ -48,6 +48,16 @@ public class Question4_ReidAmrhein {
 *
 * Called by: main
 * Calls: countDigits
+
+* Running Time Analysis:
+* Let n be the number of digits in N.
+* Each recursive call removes one digit using N / 10.
+*
+* Recurrence:
+* T(n) = T(n - 1) + c
+
+* Space Complexity:
+* O(n) due to recursion depth.
 ********************************************************************/
     
     public static int countDigit(long N, int D) {

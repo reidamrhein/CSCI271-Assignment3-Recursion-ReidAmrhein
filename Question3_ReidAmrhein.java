@@ -47,6 +47,16 @@ public class Question3_ReidAmrhein {
 *
 * Called by: main
 * Calls: max
+
+* Running Time Analysis:
+* Let n be the number of elements in the array.
+* Each recursive call compares one element and reduces n by 1.
+*
+* Recurrence:
+* T(n) = T(n - 1) + c
+
+* Space Complexity:
+* O(n) due to recursive calls.
 ********************************************************************/
     
     public static int max(int[] array, int n){

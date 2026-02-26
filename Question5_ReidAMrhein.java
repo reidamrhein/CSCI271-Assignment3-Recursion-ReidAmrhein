@@ -47,6 +47,16 @@ public class Question5_ReidAmrhein {
     *
     * Called by: main
     * Calls: reverse
+    * 
+    * Running Time Analysis:
+    * Let n be the length of the string.
+    * Each recursive call processes one character.
+    *
+    * Recurrence:
+    * T(n) = T(n - 1) + c
+    * 
+    * Space Complexity:
+    * O(n) for recursive stack.
     /************************************************************************/
     
     public static String reverse(String s, int n) {
